@@ -1,0 +1,32 @@
+class Car:
+    def __init__(self, color: str, car_type: str, year: int) -> None:
+        self.color = color
+        self.car_type = car_type
+        self.year = year
+
+    def start(self) -> None:
+        print("Автомобиль заведен")
+
+    def stop(self) -> None:
+        print("Автомобиль заглушен")
+
+    def set_year(self, year: int) -> None:
+        self.year = year
+
+    def set_type(self, car_type: str) -> None:
+        self.car_type = car_type
+
+    def set_color(self, color: str) -> None:
+        self.color = color
+
+
+car = Car("Белый", "Седан", 2021)
+car.start()
+car.stop()
+car.set_year(2023)
+car.set_type("Хэтчбек")
+car.set_color("Синий")
+
+print(car.year)
+print(car.car_type)
+print(car.color)
